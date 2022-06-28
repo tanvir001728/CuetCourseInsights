@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		  <div class="container">
+		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+		  	  <span class="navbar-toggler-icon"></span>
+		  	</button>
+		  	<a class="navbar-brand" href="#">Cuet Course Insights</a>
+
+		  	<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+		  	  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+		  	    <li class="nav-item active">
+		  	      <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+		  	    </li>
+		  	    <li class="nav-item">
+		  	      <button class="btn btn-outline-secondary log-out-btn">LogOut</button>
+		  	    </li>
+		  	  
+		  	  </ul>
+		  	 
+		  	</div>
+		  </div>
+		</nav>
+	</header>
+    <main>
+        <div class="container page-wrapper">
+            <h1>Admin Page</h1>
+            <hr>
+            <div class="row">
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-block">
+                          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link active" id="v-pills-material-tab" data-toggle="pill" href="#v-pills-material" role="tab" aria-controls="v-pills-material" aria-selected="true">Course Materials</a>
+                            <a class="nav-link" id="v-pills-material-request-tab" data-toggle="pill" href="#v-pills-material-request" role="tab" aria-controls="v-pills-material-request" aria-selected="false">Material Requests</a>
+                            <a class="nav-link" id="v-pills-applicant-tab" data-toggle="pill" href="#v-pills-joining-request" role="tab" aria-controls="v-pills-applicant" aria-selected="false">Joining Requests</a>
+                            <a class="nav-link" id="v-pills-updatepass-tab" data-toggle="pill" href="#v-pills-updatepass" role="tab" aria-controls="v-pills-updatepass" aria-selected="false">Update Password</a>
+                            <a class="nav-link" id="v-pills-issue-tab" data-toggle="pill" href="#v-pills-issue" role="tab" aria-controls="v-pills-issue" aria-selected="false">Reported Issues</a>
+                             
+                          </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class="card">
+                        <div class="card-block">
+                          <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-material" role="tabpanel" aria-labelledby="v-pills-material-tab">
+                              <button class="btn btn-primary upload-btn mb20">Upload Material</button>
+                              <div class="articles-uniq">
+                               
+                              </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-material-request" role="tabpanel" aria-labelledby="v-pills-material-request-tab">Material Requests</div>
+                            <div class="tab-pane fade" id="v-pills-joining-request" role="tabpanel" aria-labelledby="v-pills-messages-applicant-tab">Joining Requests</div>
+                            <div class="tab-pane fade" id="v-pills-updatepass" role="tabpanel" aria-labelledby="v-pills-updatepass-tab">
+                              <h2>Update Password</h2>
+                              <form class="updatepass">
+                                <div class="form-group">
+                                  <label for="adminemail">Email address</label>
+                                  <input type="email" class="form-control" id="adminemail" aria-describedby="emailHelp" placeholder="Enter email">
+                                  
+                                </div>
+                                <div class="form-group">
+                                  <label for="prevpass">Old Password</label>
+                                  <input type="password" class="form-control" id="prevpass" placeholder="Old Password">
+                                </div>
+                                <div class="form-group">
+                                  <label for="newpass">New Password</label>
+                                  <input type="password" class="form-control" id="newpass" placeholder="New Password">
+                                </div>
+                                
+                                <button  class="btn btn-primary updatepass-btn">Submit</button>
+                              </form>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-issue" role="tabpanel" aria-labelledby="v-pills-issue-tab">
+                              <h2>Reported Issues</h2>
+                            </div>
+                            <div class="tab-pane fade " id="v-pills-upload-material" role="tabpanel" aria-labelledby="v-pills-upload-material-tab">
+                              <h2>Upload Material</h2>
+                              <!-- Upload Form -->
+                              <form class="upload-form">
+                                <div class="form-group">
+                                  <select class="form-control level-sl">
+                                    <option value="0">Select Level</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                  </select>
+                                </div>
+                                <div class="form-group">
+                                  <select class="form-control term-sl">
+                                    <option value="0">Select Term</option>
+                                    <option value="i">I</option>
+                                    <option value="ii">II</option>
+                                  </select>
+                                </div>
+                                <div class="form-group">
+                                  <select class="form-control type-sl">
+                                    <option value="0">Select Type</option>
+                                    <option value="quesion">Question</option>
+                                    <option value="note">Note</option>
+                                    <option value="book">Book</option>
+                                  </select>
+                                </div>
+                                <div class="form-group">
+                                  <select class="form-control sub-sl">
+                                    <option value="0">Select Course</option>
+                                    <option value="os">OS</option>
+                                    <option value="data-com">Data Com</option>
+                                    <option value="toc">Theory of computing</option>
+                                    <option value="mp">Microprocessor</option>
+                                    <option value="stat">Statictics</option>
+
+                                  </select>
+                                </div>
+                                <div class="form-group">
+                                  <label for="file-upload">Upload Your File</label>
+                                  <input type="file" class="form-control-file form-control" id="file-upload">
+                                </div>
+                                <button class="btn btn-primary submit-btn">Submit</button>
+
+
+                              </form>
+                            </div>
+                             <!-- Update Form -->
+
+                            <div class="tab-pane fade " id="v-pills-update-material" role="tabpanel" aria-labelledby="v-pills-update-material-tab">
+                              <h2>Update Material</h2>
+                             
+                              <form class="update-form">
+                                <div class="form-group">
+                                  <select class="form-control update-level">
+                                    <option value="0">Select Level</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                  </select>
+                                </div>
+                                <div class="form-group">
+                                  <select class="form-control update-term">
+                                    <option value="0">Select Term</option>
+                                    <option value="i">I</option>
+                                    <option value="ii">II</option>
+                                  </select>
+                                </div>
+                                <div class="form-group">
+                                  <select class="form-control update-type">
+                                    <option value="0">Select Type</option>
+                                    <option value="quesion">Question</option>
+                                    <option value="note">Note</option>
+                                    <option value="book">Book</option>
+                                  </select>
+                                </div>
+                                <div class="form-group">
+                                  <select class="form-control update-sub">
+                                    <option value="0">Select Course</option>
+                                    <option value="os">OS</option>
+                                    <option value="data-com">Data Com</option>
+                                    <option value="toc">Theory of computing</option>
+                                    <option value="mp">Microprocessor</option>
+                                    <option value="stat">Statictics</option>
+
+                                  </select>
+                                </div>
+                               
+                                <button class="btn btn-primary submit-update-btn">Submit</button>
+
+
+                              </form>
+                            </div>
+  
+                        </div>
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="/js/material.js"></script>
+<script src="/admin/js/upload-material.js"></script>
+<script src="/admin/js/issue.js"></script>
+<script src="/admin/js/delete-material.js"></script>
+<script src="/admin/js/update-material.js"></script>
+<script src="/admin/js/materialrequest.js"></script>
+<script src="/admin/js/joiningrequest.js"></script>
+<script src="/admin/js/update-pass.js"></script>
+<script src="/admin/js/main.js"></script>
+</body>
+</html>

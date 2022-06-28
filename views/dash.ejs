@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard withh Cards</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
+     <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+  
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Major+Mono+Display&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/dashboard/Dashboard.css">  
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="logo">
+                <a href="#" class="nav-link">
+                    <span class="link-text logo-text">Cuet Course Insights</span>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="/mydash/show" class="nav-link">
+                    <i class="fas fa-home fa-2x"></i>
+                    <span class="link-text">Home</span>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="/auth/update" class="nav-link">
+                    <i class="fas fa-user-circle fa-2x"></i>
+                    <span class="link-text">Profile</span>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="https://libgen.is/" class="nav-link">
+                    <i class="fas fa-file-download fa-2x"></i>
+                    <span class="link-text">Download books</span>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="/dashboard/report-issue" class="nav-link">
+                    <i class="fas fa-exclamation-triangle fa-2x"></i>
+                    <span class="link-text">Report an issue</span>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="/auth/logout" class="nav-link">
+                    <i class="fas fa-sign-out-alt fa-2x"></i>
+                    <span class="link-text">Log Out</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section class="todima">
+            <h1 class="a1">Welcome to your dashboard</h1>
+            <p>Glad to have you here. Hope you make the best use of your time. </p>
+        </section>
+        <section class="container">
+            <a href="/auth/update" class="cardcont"><div class="card">
+                <div class="card-image image-1"></div>
+                <h1>Profile</h1>
+                <p>Visit your profile and all related information in this tab</p>
+            </div></a>
+            <a href="/dashboard/your-picks" class="cardcont"><div class="card">
+                <div class="card-image image-2"></div>
+                <h1>Your Picks</h1>
+                <p>See your specially hand-picked items, without the peril of following all the steps.</p>
+            </div></a>
+            <a href="/dashboard/course-material" class="cardcont"><div class="card">
+                <div class="card-image image-3"></div>
+                <h1>Course materials</h1>
+                <p>Find and read the Books, Previous year Questions, Notes of all the toppers from our vast library of resources. In short, GO FOR GLORY!</p>
+            </div></a>
+            <a data-toggle="modal" data-target="#joiningrequest" class="cardcont"><div class="card">
+                <div class="card-image image-4"></div>
+                <h1>Be a Contributor</h1>
+                <p>Wanna contribute to the community? No one ever regrets it, by helping others who might be in need. Go on!</p>
+            </div></a>
+            <a  class="cardcont" data-toggle="modal" data-target="#materialrequest"><div class="card">
+                <div class="card-image image-5"></div>
+                <h1>Request materials</h1>
+               
+           <p>Click here to reach us. Request content(question papers, books) for any course of any department and we'll hear you out. Just fill up the details.</p>
+            </div></a>
+            <a href="/auth/logout" class="cardcont"><div class="card">
+                <div class="card-image image-6"></div>
+                <h1>Log Out</h1>
+                <p>All done? Then we guess there's nothing holding you back.</p>
+            </div></a>
+        </section>
+    </main>
+     <!--start Request -->
+                <!-- Modal -->
+                <div class="modal fade right" id="materialrequest" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true" data-backdrop="false">
+                <div class="modal-dialog modal-full-height modal-right modal-notify modal-info" role="document">
+                  <div class="modal-content">
+                    <!--Header-->
+                    <div class="modal-header">
+                      <p class="heading lead">Material Request
+                      </p>
+              
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="white-text">×</span>
+                      </button>
+                    </div>
+              
+                    <!--Body-->
+                    <div class="modal-body">
+                      <div class="text-center">
+                        <i class="far fa-file-alt fa-4x mb-3 animated rotateIn"></i>
+                        <p>
+                          <strong>Need Something?</strong>
+                        </p>
+                        <p>Request for any Notes/Books/Questions you need </p>
+                      </div>
+              
+                      <hr>
+                      <form class="materialrequest-form">
+                           <div class="form-group">
+                               <label for="coursetitle">Course Title</label>
+                               <input type="text" class="form-control" id="coursetitle" placeholder="Course Title">
+                           </div>
+                           <div class="form-group">
+                              <label for="details">Be specific about what type of material you need</label>
+                              <input type="text" class="form-control" id="details" placeholder="Details">
+                          </div>
+                          <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#materialrequest">Send
+                         <i class="fa fa-paper-plane ml-1"></i> </button>
+                       </form>
+                </div>
+                  </div>
+                </div>
+              </div>
+                <!--end -->
+
+                 <!--start  Joining Request-->
+                <!-- Modal -->
+                <div class="modal fade right" id="joiningrequest" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true" data-backdrop="false">
+                <div class="modal-dialog modal-full-height modal-right modal-notify modal-info" role="document">
+                  <div class="modal-content">
+                    <!--Header-->
+                    <div class="modal-header">
+                      <p class="heading lead">Joining Request
+                      </p>
+              
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="white-text">×</span>
+                      </button>
+                    </div>
+              
+                    <!--Body-->
+                    <div class="modal-body">
+                      <div class="text-center">
+                        <i class="far fa-file-alt fa-4x mb-3 animated rotateIn"></i>
+                        <p>
+                          <strong>Want to Contrbute?</strong>
+                        </p>
+                        <p>Be a part of this community</p>
+                      </div>
+              
+                      <hr>
+                      <form class="joiningrequest-form">
+                           <div class="form-group">
+                               <label for="email">Email</label>
+                               <input type="email" class="form-control" id="email" placeholder="Use Cuet Mail">
+                           </div>
+                         
+                          <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#joiningrequest">Send
+                         <i class="fa fa-paper-plane ml-1"></i> </button>
+                       </form>
+                </div>
+                  </div>
+                </div>
+              </div>
+                <!--end -->
+
+
+
+
+
+
+
+ <script src="https://kit.fontawesome.com/7d904839de.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+    <!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <script src="/js/material-request.js"></script>
+    <script src="/js/joining-request.js"></script>
+</body>
+</html>

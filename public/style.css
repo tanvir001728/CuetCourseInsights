@@ -1,0 +1,86 @@
+.mt-20 {
+	margin-top: 20px;
+}
+.mb-10{
+	margin-bottom: 10px;
+}
+footer {
+	height: 80px;
+	margin-top: 50px;
+}
+footer>.container, footer .row {
+	height: 100%;
+}
+.page-wrapper{
+	margin: 50px auto;
+	padding: 20px 15px;
+	box-shadow: 0 0 10px #ccc;
+	border-radius: 10px;
+}
+.page-wrapper h1{
+	text-align: center;
+	margin-bottom: 20px;
+}
+.card-block
+{
+	padding: 15px;
+}
+.w10
+{
+	width:10%;
+}
+.w15
+{
+	width:15%;
+}
+.w20
+{
+	width:20%;
+}
+.w25
+{
+	width:25%;
+}
+.w30
+{
+	width:30%;
+}
+.w40
+{
+	width:40%;
+}
+.w50
+{
+	width:50%;
+}
+.w60
+{
+	width:60%;
+}
+.w5
+{
+	width:5%;
+}
+.articles
+{
+	margin-top: 15px;
+}
+.article-inline{
+	padding-left: 10px;
+}
+.hd{
+	padding-left: 10px;
+	font-weight: bold;
+	background: rgba(5, 245, 173, 0.05);
+}
+.article-inline:nth-of-type(odd)
+{
+	background: rgba(0,0,0,0.05);
+}
+.mb20{
+	margin-bottom: 20px;
+}
+span{
+	width: 100%;
+
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>NOTICE</title>
+    <link rel = "icon" href = 
+"https://png.pngtree.com/png-clipart/20190629/original/pngtree-vector-notice-pin-icon-png-image_4101400.jpg" 
+        type = "image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="notice.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-white">
+            <div class="container-fluid">
+                <a class="navbar-brand" id="ab1" href="#">CUET Course Insights</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="ab2" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " id="ab3" href="/admin">Admin</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="ab4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Enter
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item " id="ab5" href="/mydash/show">Log In</a></li>
+                                <li><a class="dropdown-item " id="ab6" href="/auth/register">SignUp / Register</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="ab7" href="/dashboard/notice/notice.html">Notice</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="ab8" href="/">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <button class="btn">Get a quote</button>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- <div id="himage"></div> -->
+        <div class="w3-content w3-section" ">
+            <img class="mySlides" src="/images/panorama1.jpg" style="width:100%">
+            <img class="mySlides" src="/images/panorama.jpg" style="width:100%">
+            <img class="mySlides" src="/images/panorama2.jpg" style="width:100%">
+        </div>
+        <h1>Notice</h1>
+        <div class="meinfo table-responsive">
+            <table class="table  table-striped  table-hover" id="amino">
+                <thead>
+                    <tr class="bg-success">
+                        <th scope="col" style="color: #F2AC4E;">#</th>
+                        <th scope="col" style="color: #FBAC4E;">Date</th>
+                        <th scope="col" style="color: #FBAC4E;">Content</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>01/12/2020</td>
+                        <td>New questions added for CSE, Level 3 Term II </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>06/02/2021</td>
+                        <td>Notice issued for the registration of Level 4 Term I</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>14/02/2021</td>
+                        <td>Last date for  registration, to avoid late fine</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>07/06/2021</td>
+                        <td>Online classes of Level 3 Term II to end on June 23rd, 2021</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>15/08/2021</td>
+                        <td>Online Sessional classes to be conducted for Level 3 Term I, Level 4 Term II,Level 2 Term I, and Level 1 Term I from August 25th, 2021</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>26/08/2021</td>
+                        <td>CUET issues guidelines for Semester Final Exams of Level 3 Term I, Level 4 Term II,Level 2 Term I, and Level 1 Term I. Exams to commence from October 3rd,2021 if situation is good.</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+    </main>
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 3000); // Change image every 2 seconds
+            }
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script> 
+</body>
+</html>

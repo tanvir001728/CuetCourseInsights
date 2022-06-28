@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coursematerials</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="coursematerials.css">
+</head>
+<body>
+    <!-- NAV StartS-->
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="logo">
+                <a href="#" class="nav-link">
+                    <span class="link-text logo-text">Cuet Course Insights</span>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="/mydash/show" class="nav-link">
+                    <i class="fas fa-home fa-2x"></i>
+                    <span class="link-text">Home</span>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="/auth/update" class="nav-link">
+                    <i class="fas fa-user-circle fa-2x"></i>
+                    <span class="link-text">Profile</span>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="https://libgen.is/" class="nav-link">
+                    <i class="fas fa-file-download fa-2x"></i>
+                    <span class="link-text">Download books</span>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="/dashboard/report-issue" class="nav-link">
+                    <i class="fas fa-exclamation-triangle fa-2x"></i>
+                    <span class="link-text">Report an issue</span>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="/auth/logout" class="nav-link">
+                    <i class="fas fa-sign-out-alt fa-2x"></i>
+                    <span class="link-text">Log Out</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+     <!-- NAV Ends--> 
+    <main>
+		<div class="container page-wrapper">
+            <h1>Select your Material</h1>
+            <div class="row">
+                <div class="col-3">
+                    <select class="form-control level-sl">
+                        <option value="0">Select Level</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div class="col-3">
+                    <select class="form-control term-sl">
+                        <option value="0">Select Term</option>
+                        <option value="i">I</option>
+                        <option value="ii">II</option>
+                      </select>
+                </div>
+                <div class="col-3">
+                    <select class="form-control type-sl">
+                        <option value="0">Select Type</option>
+                        <option value="quesion">Question</option>
+                        <option value="note">Note</option>
+                        <option value="book">Book</option>
+                      </select>
+                </div>
+                <div class="col-3 sem-def">
+                    <select class="form-control sub-sl">
+                        <option value="0">Select Course</option>
+                    </select>
+                </div>
+
+                <div class="col-3 sem-3-1">
+                    <select class="form-control sub-sl-3-1">
+                        <option value="0">Select Course</option>
+                        <option value="os">OS</option>
+                        <option value="data-com">Data Com</option>
+                        <option value="toc">Theory of computing</option>
+                        <option value="mp">Microprocessor</option>
+                        <option value="stat">Statictics</option>
+
+                      </select>
+                </div>
+                <div class="col-3 sem-3-2">
+                    <select class="form-control sub-sl-3-2">
+                        <option value="0">Select Course</option>
+                        <option value="cn">Computer Networking</option>
+                        <option value="sad">System Analysis And Design</option>
+                        <option value="ai">Artificial Intelligence</option>
+                        <option value="cpi">Computer Pheripherals and Interfacing</option>
+                        <option value="ca">Computer Architecture</option>
+
+                      </select>
+                </div>
+               
+            </div>
+            <div class="btnn">
+                <button class="btn btn-primary btn-slct">Submit</button>
+            </div>
+            <div class="row">
+                <div class="articles-uniq">
+                    
+                      
+                </div>
+            </div>
+			
+				
+		</div>
+	</main>
+   
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/material.js"></script>
+    <script src="show-material.js"></script>
+</body>
+</html>
